@@ -10,14 +10,14 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://dearloom.me/" />
     <link rel="canonical" href="https://dearloom.me/" />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>ksky233 · Agent Infrastructure</title>
   </head>
   <body>
     <a class="skip-link" href="#projects">跳转到项目</a>
     <div class="page-shell">
       <header class="site-header">
-        <a class="identity" href="/" aria-label="ksky233 首页">
+        <a class="identity" href="./" aria-label="ksky233 首页">
           <span class="identity-mark" aria-hidden="true">K</span>
           <span>ksky233</span>
         </a>
@@ -32,7 +32,7 @@
         </section>
 
         <section id="projects" class="project-grid" aria-label="项目列表">
-          <article class="project-card">
+          <article class="project-card dualstruct-card">
             <div class="card-meta">
               <span>01 / DOCUMENT RAG</span>
               <span class="status"><i></i> ONLINE</span>
@@ -53,7 +53,7 @@
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card nexusmcp-card">
             <div class="card-meta">
               <span>02 / MCP GATEWAY</span>
               <span class="status"><i></i> ONLINE</span>
@@ -64,7 +64,7 @@
               <p class="project-copy">将企业 HTTP/OpenAPI 服务直接发布为受治理的 MCP Tool，以 Toolset 和 Scoped Endpoint 组织 Agent 可见能力，并贯通 Hybrid Search、Policy、Credential、Retry 与 Audit。</p>
             </div>
             <ul class="tag-list" aria-label="NexusMCP 关键词">
-              <li>Direct Publish</li>
+              <li>Tool Publication</li>
               <li>Toolset Scope</li>
               <li>Policy · Audit</li>
             </ul>
@@ -85,7 +85,7 @@
           </div>
 
           <article class="workflow-card">
-            <div class="workflow-card-header"><span>01 / DUALSTRUCT</span><strong>结构化文档检索</strong></div>
+            <div class="workflow-card-header"><span>01 / KNOWLEDGE PLANE</span><strong>DualStruct · 结构化知识检索</strong></div>
             <ol class="workflow-list">
               <li><span>01</span><strong>文档接入</strong><p>PDF 与解析任务进入受控 Ingestion 流程。</p></li>
               <li><span>02</span><strong>稳定结构</strong><p>Parser 输出归一化为 Stable DualStruct IR。</p></li>
@@ -96,10 +96,10 @@
           </article>
 
           <article class="workflow-card">
-            <div class="workflow-card-header"><span>02 / NEXUSMCP</span><strong>企业工具治理</strong></div>
+            <div class="workflow-card-header"><span>02 / TOOL PLANE</span><strong>NexusMCP · 企业工具治理</strong></div>
             <ol class="workflow-list">
               <li><span>01</span><strong>接入上游</strong><p>登记企业 HTTP Service、OpenAPI 与 Egress 边界。</p></li>
-              <li><span>02</span><strong>直接发布</strong><p>解析、审核并原子发布 ToolVersion 与 Binding。</p></li>
+              <li><span>02</span><strong>工具发布</strong><p>解析、审核并原子发布 ToolVersion 与 Binding。</p></li>
               <li><span>03</span><strong>组合 Toolset</strong><p>按业务组织工具，并授予 Agent Scoped Endpoint。</p></li>
               <li><span>04</span><strong>检索治理</strong><p>FTS/Hybrid Search 后执行 Policy 与 Credential。</p></li>
               <li><span>05</span><strong>执行审计</strong><p>受控调用 Upstream，记录 Retry、Execution 与 Audit。</p></li>
