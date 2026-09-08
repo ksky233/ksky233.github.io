@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ksky233 的 Agent Infrastructure 工程项目主页，涵盖结构化知识检索与企业工具治理。" />
+    <meta name="theme-color" content="#eeeee9" />
+    <meta property="og:title" content="ksky233 · Agent Infrastructure" />
+    <meta property="og:description" content="从结构化知识检索到企业工具治理，为 Agent 构建可靠的基础设施。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dearloom.me/" />
+    <link rel="canonical" href="https://dearloom.me/" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>ksky233 · Agent Infrastructure</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#projects">跳转到项目</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="identity" href="/" aria-label="ksky233 首页">
+          <span class="identity-mark" aria-hidden="true">K</span>
+          <span>ksky233</span>
+        </a>
+        <a class="quiet-link" href="https://github.com/ksky233" rel="noreferrer" target="_blank">GitHub <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <main>
+        <section class="hero">
+          <p class="eyebrow">AGENT INFRASTRUCTURE · PROJECT INDEX</p>
+          <h1>为 Agent 构建<br /><span>可靠的基础设施。</span></h1>
+          <p class="hero-copy">从结构化知识检索到企业工具治理，两个项目分别回答 Agent 如何获得可信证据，以及如何安全调用真实能力。</p>
+        </section>
+
+        <section id="projects" class="project-grid" aria-label="项目列表">
+          <article class="project-card">
+            <div class="card-meta">
+              <span>01 / DOCUMENT RAG</span>
+              <span class="status"><i></i> ONLINE</span>
+            </div>
+            <div>
+              <h2>DualStruct</h2>
+              <p class="project-subtitle">Structure-aware multimodal document RAG</p>
+              <p class="project-copy">将复杂 PDF 转换为可检索、可融合、可回溯的证据链，贯通结构感知切块、Text/Visual Retrieval 与 Citation。</p>
+            </div>
+            <ul class="tag-list" aria-label="DualStruct 关键词">
+              <li>RetrievalUnit</li>
+              <li>Hybrid + RRF</li>
+              <li>Evidence Citation</li>
+            </ul>
+            <div class="project-actions">
+              <a class="project-action" href="https://dualstruct.dearloom.me">项目主页 <span aria-hidden="true">→</span></a>
+              <a class="project-action project-action-outline" href="https://github.com/ksky233/DualStruct" rel="noreferrer" target="_blank">GitHub 源码 <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-meta">
+              <span>02 / MCP GATEWAY</span>
+              <span class="status"><i></i> ONLINE</span>
+            </div>
+            <div>
+              <h2>NexusMCP</h2>
+              <p class="project-subtitle">Enterprise MCP Gateway &amp; Tool Registry</p>
+              <p class="project-copy">把企业 HTTP/OpenAPI 服务转化为受治理的 MCP Tool，并覆盖身份、策略、凭据、审批、执行审计与检索发现。</p>
+            </div>
+            <ul class="tag-list" aria-label="NexusMCP 关键词">
+              <li>Tool Registry</li>
+              <li>Policy &amp; Approval</li>
+              <li>Audit &amp; Trace</li>
+            </ul>
+            <div class="project-actions">
+              <a class="project-action" href="https://nexusmcp.dearloom.me">项目主页 <span aria-hidden="true">→</span></a>
+              <a class="project-action project-action-outline" href="https://github.com/ksky233/NexusMCP" rel="noreferrer" target="_blank">GitHub 源码 <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </section>
+
+        <section class="workflow-section" aria-labelledby="workflow-title">
+          <div class="workflow-heading">
+            <div>
+              <p class="eyebrow">CORE USE CASES · FROM INPUT TO EVIDENCE</p>
+              <h2 id="workflow-title">两条从输入到结果的工程链路。</h2>
+            </div>
+            <p>分别覆盖知识证据获取与企业工具治理，构成 Agent 基础设施的两个互补方向。</p>
+          </div>
+
+          <article class="workflow-card">
+            <div class="workflow-card-header"><span>01 / DUALSTRUCT</span><strong>结构化文档检索</strong></div>
+            <ol class="workflow-list">
+              <li><span>01</span><strong>文档接入</strong><p>PDF 与解析任务进入受控 Ingestion 流程。</p></li>
+              <li><span>02</span><strong>稳定结构</strong><p>Parser 输出归一化为 Stable DualStruct IR。</p></li>
+              <li><span>03</span><strong>双路索引</strong><p>RetrievalUnit 映射 Dense 与 Sparse View。</p></li>
+              <li><span>04</span><strong>检索精排</strong><p>Hybrid Retrieval、RRF 与 Reranker 组合。</p></li>
+              <li><span>05</span><strong>证据回答</strong><p>构造 Context，并返回可定位的 Citation。</p></li>
+            </ol>
+          </article>
+
+          <article class="workflow-card">
+            <div class="workflow-card-header"><span>02 / NEXUSMCP</span><strong>企业工具治理</strong></div>
+            <ol class="workflow-list">
+              <li><span>01</span><strong>接入上游</strong><p>注册企业 HTTP Service 与 OpenAPI 来源。</p></li>
+              <li><span>02</span><strong>导入审核</strong><p>解析 Operation、标准化 Schema 并 Review。</p></li>
+              <li><span>03</span><strong>发布工具</strong><p>原子发布 ToolVersion 与 ToolBinding。</p></li>
+              <li><span>04</span><strong>发现治理</strong><p>FTS/Hybrid Search 后执行 Policy 与 Credential。</p></li>
+              <li><span>05</span><strong>执行审计</strong><p>调用 Upstream，并记录 Retry、Execution 与 Audit。</p></li>
+            </ol>
+          </article>
+        </section>
+      </main>
+
+      <footer><span>ksky233</span><span>Python · Retrieval · Agent Infrastructure</span></footer>
+    </div>
+  </body>
+</html>
